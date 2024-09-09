@@ -1,24 +1,43 @@
+@font-face{
+    font-family: BuenosAires;
+    src: url(buenos-aires.ttf);
+}
+
 body {
     margin: 0px;
+    color: #262639;
+    font-family: BuenosAires;
+    font-size: smaller;
+}
+
+a:link {
+    color: #262639;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 header {
     background-color: #262639;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
+    margin-bottom: 0px;
 }
 
 #mathem-logo {
-    width: 130px;
-    display: inline;
+    height: 35px;
     padding-right: 40px;
+}
+
+#searchbar {
+    
 }
 
 
@@ -26,4 +45,30 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.kundvagn {
+    background-color: white;
+    border-radius: 75px;
+    padding: 5px;
+    border: solid 1px #c6c6c6;
+}
+
+.fontawesomeicon {
+    size: 30px; /*fråga hur man gör den större*/
+    display: inline;
+    margin: 5px;
+}
+
+#huvudmeny {
+    display: flex;
+    list-style: none;
+    border: 1px solid lightgray;
+    margin-top: 0px
+}
+
+.menyval {
+    padding-right: 10px;
+    color: black;
+    padding: 10px;
 }
