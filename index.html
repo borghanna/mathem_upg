@@ -10,21 +10,24 @@
 
     <body>
         <header>
-            
-            <img id="mathem-logo" src="Bilder-mathem/mathem-logo-vit.png"/>
+           
+            <div id="headerleft">
+                <img id="mathem-logo" src="Bilder-mathem/mathem-logo-vit.png"/>
 
-            <search>
-                <form>
-                    <input placeholder="sök">
-                </form>
+                <search id="searchbar">
+                    <form>
+                        <input placeholder="sök">
+                    </form> 
+                </search>
+            </div>
 
-               
-            </search>
 
-            <button type="button">"kundvagn"</button>
+            <button type="button" id="kundvagn">0,00 kr</button> <!--lägg till kundvagn och pil ikon + dropdown-->
+        
+        </header>
 
             <nav>
-
+                <!--fråga om länkar/listitems?-->
                 <ul id="huvudmeny">
                     <li class="menyval">Kategorier</li>
                     <li class="menyval">Erbjudanden</li>
@@ -33,17 +36,14 @@
                 </ul>
     
             </nav>
+        
 
-        <nav>
-
-        </nav>
-     </header>
 
         <main>
             
             <section id="nykund150">
 
-                <p>Ny Här?</p>
+                <h4>Ny Här?</h4>
                 <p>Använd koden NY150KR i kassan och få rabatt på din beställning. Gäller vid köp över 800 kr och endast på varor som säljs av Mathem.</p>
             
             </section>
@@ -90,13 +90,70 @@
                     </div>
                 
                 </div>
+                
+                <button type="button">Se alla kategorier</button>
+            
             </section>
 
 
 
         </main>
 
-        <footer>här är footer</footer>
+        <footer>
+            <div id="footer1"> 
+
+                <div class="sektionfooter"> <!--4 listor/ länkar i varsin div nästlade, fråga om länkar??-->
+                   
+                    <h3>Handla</h3>
+                    <ul class="menyfooter">
+                        <li class="menyvalfooter"><a href="#"> frågor och svar </li> <i class="fa-solid fa-arrow-up-right-from-square"></i><!--lägg till ikon ruta med pil-->
+                        <li class="menyvalfooter">Så handlar du</li>
+                        <li class="menyvalfooter">Hemleverans</li>
+                        <li class="menyvalfooter">Färskvarugaranti</li>
+                    </ul>
+
+                </div>
+
+                <div class="sektionfooter">
+                   
+                    <h3>Mathem</h3>
+                    <ul class="menyfooter">
+                        <li class="menyvalfooter">Om Mathem</li> 
+                        <li class="menyvalfooter">Karriär</li><!--lägg till ikon ruta med pil-->
+                        <li class="menyvalfooter">Press</li><!--lägg till ikon ruta med pil-->
+                    </ul>
+
+                </div>
+
+                <div class="sektionfooter">
+                   
+                    <h3>Kontakta oss</h3>
+                    <ul class="menyfooter">
+                        <li class="menyvalfooter">Kundservice</li> 
+                        <li class="menyvalfooter">För leverantörer</li><!--lägg till ikon ruta med pil-->
+                        <li class="menyvalfooter">Facebook</li><!--lägg till ikon ruta med pil-->
+                        <li class="menyvalfooter">X (f.d Twitter)</li><!--lägg till ikon ruta med pil-->
+                        <li class="menyvalfooter">Instagram</li><!--lägg till ikon ruta med pil-->
+                        
+                        
+                    </ul>
+
+                </div>
+
+                <div class="sektionfooter">
+
+                    <h3>Appar</h3>
+
+                    <img src="Bilder-mathem/appstore-logo.svg" alt="Appstore ikon"/>
+
+                    <img src="Bilder-mathem/googleplay-logo.png" alt="Google play ikon"/>
+
+                </div>
+
+
+            </div>
+
+        </footer>
         
     
 

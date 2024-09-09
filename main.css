@@ -1,8 +1,29 @@
+body {
+    margin: 0px;
+}
 
 header {
     background-color: #262639;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
 }
 
 #mathem-logo {
-    width: 70px;
+    width: 130px;
+    display: inline;
+    padding-right: 40px;
+}
+
+
+#headerleft {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
