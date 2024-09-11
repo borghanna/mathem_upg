@@ -18,36 +18,34 @@
     <body>
 
 
+            <header>
+
+                 <div id="headerleft"> <!--obs detta var ej okej enligt W3C testade olika alternativ men inget var godkänt. Search var ej tillåtet att ligga i ett annat element. (header, section nav, div)-->
+                    <a href="#">
+                        <img id="mathem-logo" alt="Mathem Logotyp" src="Bilder-mathem/mathem-logo-vit.png">
+                    </a>
+                
+                    <search id="searchbar">
+                        <form>
+                            <input placeholder="sök"> <!--fråga hur jag får sökikon i rutan-->
+                        </form>
+                    </search>
+                </div>
             
-        <header>
-           
-            <div id="headerleft">
-                    <img id="mathem-logo" src="Bilder-mathem/mathem-logo-vit.png"/>
-
-                <search id="searchbar">
-                    <form>
-                        <input placeholder="sök"> <!--fråga hur jag får sökikon i rutan-->
-                    </form> 
-                </search>
-            </div>
-
-
-            <button type="button" class="kundvagn">
-                <div class=fontawesomeicon>
+                <button type="button" class="kundvagn">
                     <i class="fa-solid fa-cart-shopping"></i>
-                </div>
-                0,00 kr
-                <div class=fontawesomeicon>
+            
+                    0,00 kr
                     <i class="fa-solid fa-chevron-left"></i>
-                </div>
-            </button>
-        
-       
-        </header>
+            
+                </button>
+            
+            
+            </header>
 
             <nav id="navbar">
 
-                <div id="navleft">
+                <nav id="navleft">
                     <ul id="huvudmeny">
                         <li class="menyval">
                             <a href="#">
@@ -70,7 +68,7 @@
                         </a></li>
                     </ul>
 
-                </div>
+                </nav>
 
                 <div id="navright">
 
@@ -89,7 +87,7 @@
             <section id="nykund150">
 
                 <div class="dealicon">
-                    <i class="fa-solid fa-gift"></i>
+                    <i class="fa-solid fa-gift fa-2x"></i>
                 </div>
 
                 <div class="dealtext">
@@ -103,12 +101,12 @@
 
                 <div class="flexleft">
                     <h1>Vi kommer med det du behöver</h1>
-                    <p>Handla när och där det passar dig.<br/> Fyll på med mat, prylar och apoteksvaror till riktigt schyssta priser,<br/> och få leverans till dörren från 0 kronor.</p>
+                    <p>Handla när och där det passar dig. Fyll<br> på med mat, prylar och apoteksvaror till<br> riktigt schyssta priser, och få leverans <br>till dörren från 0 kronor.</p>
                     <button type="button" class="rodknapp">Se om vi levererar till dig</button>
 
                 </div>
 
-                <img class="flexright" src="Bilder-mathem/bild-1.webp" alt="en man med en matlåda i händerna"/>
+                <img class="flexright" src="Bilder-mathem/bild-1.webp" alt="en man med en matlåda i händerna">
 
                 </section>
 
@@ -284,11 +282,11 @@
                     
                     <h3>Appar</h3>
                     <a href="#">
-                        <img src="Bilder-mathem/appstore-logo.svg" class="footericon" alt="appstore ikon"/>
+                        <img src="Bilder-mathem/appstore-logo.svg" class="footericon" alt="appstore ikon">
                     </a>
 
                     <a href="#">
-                        <img src="Bilder-mathem/googleplay-logo.png" class="footericon" alt="google pay ikon"/>
+                        <img src="Bilder-mathem/googleplay-logo.png" class="footericon" alt="google pay ikon">
                     </a>
                 </div>
             </div>
