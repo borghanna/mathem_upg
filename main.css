@@ -1,12 +1,12 @@
-@font-face{
-    font-family: BuenosAires;
-    src: url(buenos-aires.ttf) format('truetype');
+
+@font-face {
+    font-family: Buenosaires;
+    src: url(fonter/Buenos-Aires-Light.otf);
 }
 
 body {
     margin: 0px;
     color: #262639;
-    font-family: BuenosAires;
     font-size: smaller;
     background-color: #fdfdfd;
 }
@@ -64,38 +64,45 @@ h2 {
 }
 
 .rodknapp {
-    background-color: #e65e61;
+    background-color: #ff6666;
     color: white;
     border-radius: 75px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 25px;
     padding-right: 25px;
-    border-color: #e65e61;
     border-style: hidden;
 }
 
 .loginknapp { /*återanvänt kod, ädrat padding*/
-    background-color: #e65e61;
+    background-color: #ff6666;
     color: white;
     border-radius: 75px;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 15px;
     padding-right: 15px;
-    border-color: #e65e61;
     border-style: hidden;
+    margin-left: 15px;
 }
 
 /* font awesome justeringar */
 .fa-gift{
-    color: #e65e61;
+    color: #8e7868;
 }
 
-.fontawesomeicon {
-    size: 30px; /*fråga hur man gör den större*/
+.fa-cart-shopping {
     display: inline;
     margin: 5px;
+}
+
+.fa-chevron-left {
+    display: inline;
+    margin: 5px;
+}
+
+.dealicon {
+    margin-right: 15px;
 }
 
 /* här börjar header*/
