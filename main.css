@@ -1,6 +1,6 @@
 @font-face{
     font-family: BuenosAires;
-    src: url(buenos-aires.ttf);
+    src: url(buenos-aires.ttf) format('truetype');
 }
 
 body {
@@ -8,8 +8,9 @@ body {
     color: #262639;
     font-family: BuenosAires;
     font-size: smaller;
+    background-color: #fdfdfd;
 }
-
+/* utseende länkar */
 a:link {
     color: #262639;
     text-decoration: none;
@@ -19,6 +20,85 @@ a:hover {
     text-decoration: underline;
 }
 
+a:visited {
+    text-decoration: none;
+    color: #262639;
+}
+
+.bootstraplink:link {
+    text-decoration: none;
+}
+
+.bootstraplink:hover {
+    text-decoration: none;
+}
+
+.footerlink:link {
+    color: white;
+    text-decoration: none;
+}
+
+.footerlink:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.footerlink:visited {
+    color: white;
+}
+
+/*länkar slut*/
+
+/*justeringar för text*/
+h2 {
+    text-align: center;
+}
+
+/* Knappar justeringar*/
+
+.kundvagn {
+    background-color: white;
+    border-radius: 75px;
+    padding: 5px;
+    border: solid 1px #c6c6c6;
+}
+
+.rodknapp {
+    background-color: #e65e61;
+    color: white;
+    border-radius: 75px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-color: #e65e61;
+    border-style: hidden;
+}
+
+.loginknapp { /*återanvänt kod, ädrat padding*/
+    background-color: #e65e61;
+    color: white;
+    border-radius: 75px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-color: #e65e61;
+    border-style: hidden;
+}
+
+/* font awesome justeringar */
+.fa-gift{
+    color: #e65e61;
+}
+
+.fontawesomeicon {
+    size: 30px; /*fråga hur man gör den större*/
+    display: inline;
+    margin: 5px;
+}
+
+/* här börjar header*/
 header {
     background-color: #262639;
     padding-left: 35px;
@@ -36,39 +116,138 @@ header {
     padding-right: 40px;
 }
 
-#searchbar {
-    
-}
-
 
 #headerleft {
+    align-items: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.kundvagn {
-    background-color: white;
-    border-radius: 75px;
-    padding: 5px;
-    border: solid 1px #c6c6c6;
-}
+/*slut header*/
 
-.fontawesomeicon {
-    size: 30px; /*fråga hur man gör den större*/
-    display: inline;
-    margin: 5px;
+
+/*navigering börjar här */
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px lightgray;
+    height: 45px;
 }
 
 #huvudmeny {
     display: flex;
     list-style: none;
-    border: 1px solid lightgray;
-    margin-top: 0px
+    align-items: center;
 }
 
+
 .menyval {
-    padding-right: 10px;
-    color: black;
-    padding: 10px;
+    padding-right: 20px;
+    padding-top: 13px;
+    align-items: center;
+}
+
+#navright {
+    padding-right: 25px;
+}
+
+#navleft {
+    align-items: center;
+}
+/* slut navigering */
+
+
+/*här börjar main*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#nykund150 {
+    background-color: #f1f1f1;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    width: 90%;
+
+}
+
+/*fixa icon i lealrutan!!*/
+
+#mainsection {
+    display: flex;
+    margin-bottom: 50px;
+    width: 90%;
+}
+
+.flexright {
+    width: 700px;
+    border-radius: 20px;
+}
+
+.flexleft {
+    padding: 30px;
+}
+
+#mainsection2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 50px;
+}
+
+.textcontainer{
+    align-items: center;
+}
+
+#flex-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+}
+
+.card-body {
+    height: 150px;
+}
+
+.flexitem {
+    margin: 20px;
+}
+/*slut main*/
+
+footer {
+    background-color: #262639;
+    color: white;
+    margin-top: 50px;
+}
+
+#footer1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.menyfooter {
+    list-style: none;
+}
+
+
+#section2footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footericon {
+    width: 100px;
+}
+
+.menyvalfooter {
+    color: white;
 }

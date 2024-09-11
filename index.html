@@ -40,7 +40,7 @@
                 <div class=fontawesomeicon>
                     <i class="fa-solid fa-chevron-left"></i>
                 </div>
-            </button> <!--lägg till kundvagn och pil ikon + dropdown-->
+            </button>
         
        
         </header>
@@ -49,17 +49,34 @@
 
                 <div id="navleft">
                     <ul id="huvudmeny">
-                        <li class="menyval"><a href="#">Kategorier</a></li> <!--pilikon, dropdown?-->
-                        <li class="menyval"><a href="#">Erbjudanden</a></li>
-                        <li class="menyval"><a href="#">Recept</a></li>
-                        <li class="menyval"><a href="#">För företag</a></li>
+                        <li class="menyval">
+                            <a href="#">
+                                <i class="fa-solid fa-carrot"></i>
+                                Kategorier
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a> <!--TODO: fixa indentering-->
+                         </li> <!--dropdown?-->
+                        <li class="menyval"><a href="#">
+                            <i class="fa-solid fa-certificate"></i>
+                            Erbjudanden
+                        </a></li>
+                        <li class="menyval"><a href="#">
+                            <i class="fa-solid fa-utensils"></i>
+                            Recept
+                        </a></li>
+                        <li class="menyval"><a href="#">
+                            <i class="fa-solid fa-briefcase"></i>
+                            För företag
+                        </a></li>
                     </ul>
 
                 </div>
 
                 <div id="navright">
 
+                    <a href="#">Logga in</a>
 
+                    <button type="button" class="loginknapp">Skapa konto</button>
 
                 </div>
     
@@ -71,55 +88,96 @@
             
             <section id="nykund150">
 
-                <h4>Ny Här?</h4>
-                <p>Använd koden NY150KR i kassan och få rabatt på din beställning. Gäller vid köp över 800 kr och endast på varor som säljs av Mathem.</p>
-            
-            </section>
+                <div class="dealicon">
+                    <i class="fa-solid fa-gift"></i>
+                </div>
 
-            <section>
-
-                <h1>Vi kommer med det du behöver</h1>
-                <p>Handla när och där det passar dig. Fyll på med mat, prylar och apoteksvaror till riktigt schyssta priser, och få leverans till dörren från 0 kronor.</p>
-                <button>Se om vi levererar till dig</button>
-
-                <img src="Bilder-mathem/bild-1.webp"/>
+                <div class="dealtext">
+                    <h4>Ny Här?</h4>
+                    <p>Använd koden NY150KR i kassan och få rabatt på din beställning. Gäller vid köp över 800 kr och endast på varor som säljs av Mathem.</p>
+                </div>
 
             </section>
 
-            <section>
+            <section id="mainsection">
 
-                <h2>Upptäck vårt stora sortiment</h2>
-                <p>Fågel, fisk och allt mittemellan. På Mathem hittar du allt du kan köpa i din vanliga matbutik och mycket mer. </p>
+                <div class="flexleft">
+                    <h1>Vi kommer med det du behöver</h1>
+                    <p>Handla när och där det passar dig. Fyll på med mat, prylar och apoteksvaror till riktigt schyssta priser, och få leverans till dörren från 0 kronor.</p>
+                    <button type="button" class="rodknapp">Se om vi levererar till dig</button>
 
-                <div id="parent">
-                   
-                    <div class="child">
-                    <img src="Bilder-mathem/img-prispressat.webp"/>
-                    <h3>Prispressat</h3>
-                    <p>Handla dina vardagsfavoriter, alltid riktigt låga priser.</p>
                 </div>
 
-                    <div class="child">
-                        <img src="Bilder-mathem/img-enklare.webp"/>
-                        <h3>Enklare småbarnsliv</h3>
-                        <p>Här hittar du allt från blöjor och prispressad välling till enkel vardagsmat för hela familjen.</p>
-                    </div>
+                <img class="flexright" src="Bilder-mathem/bild-1.webp" alt="en man med en matlåda i händerna"/>
 
-                    <div class="child">
-                        <img src="Bilder-mathem/img-prispressat.webp"/>
-                        <h3>Frukt och grönt</h3>
-                        <p>Njut av det bästa säsongen har att erbjuda, plockat av utbildade experter.</p>
+                </section>
+
+        
+            <section id="mainsection2">
+
+                <div class="text-container">
+                    <h2>Upptäck vårt stora sortiment</h2>
+                    <p>Fågel, fisk och allt mittemellan. På Mathem hittar du allt du kan köpa i din vanliga matbutik och mycket mer. </p>
+                </div>
+
+                <div id="flex-container">
+                
+                    <div class="flexitem">
+                        <a href="#" class="bootstraplink">
+                            <div class="card" style="width: 15rem;">
+                                <img src="Bilder-mathem/img-prispressat.webp" class="card-img-top" alt="Bild på olika matvaror">
+                                <div class="card-body">
+                                    <h5 class="card-title">Prispressat</h5>
+                                    <p class="card-text">Handla dina vardagsfavoriter, alltid riktigt låga priser.</p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                   
-                        <div class="child">
-                        <img src="Bilder-mathem/img-prispressat.webp"/>
-                        <h3>Bröd och bageri</h3>
-                        <p>Nybakat bröd, färdiga bakverk och kex till ostbrickan. Kika inpå hylla för bröd och bageri.</p>
+                
+                    <div class="flexitem">
+                        <a href="#" class="bootstraplink">
+                            <div class="card" style="width: 15rem;">
+                                <img src="Bilder-mathem/img-enklare.webp" class="card-img-top"
+                                    alt="Två personer packar upp matvaror, en av personerna håller en bebis">
+                                <div class="card-body">
+                                    <h5 class="card-title">enklare småbarnsliv</h5>
+                                    <p class="card-text">Här hittar du allt från blöjor och prispressad välling till enkel vardagsmat för
+                                        hela familjen.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="flexitem">
+                        <a href="#" class="bootstraplink">
+                            <div class="card" style="width: 15rem;">
+                                <img src="Bilder-mathem/img-fruktogront.webp" class="card-img-top" alt="Bild på olika matvaror">
+                                <div class="card-body">
+                                    <h5 class="card-title">Frukt och grönt</h5>
+                                    <p class="card-text">Njut av det bästa säsongen har att erbjuda, plockat av utbildade experter.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="flexitem">
+                        <a href="#" class="bootstraplink">
+                            <div class="card" style="width: 15rem;">
+                                <img src="Bilder-mathem/img-brödobageri.webp" class="card-img-top" alt="Bild på olika matvaror">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bröd och bageri</h5>
+                                    <p class="card-text">Nybakat bröd, färdiga bakverk och kex till ostbrickan. Kika inpå hylla för bröd och
+                                        bageri.</p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 
                 </div>
+
+
                 
-                <button type="button">Se alla kategorier</button>
+                <button type="button" class="rodknapp">Se alla kategorier</button>
             
             </section>
 
@@ -134,10 +192,27 @@
                    
                     <h3>Handla</h3>
                     <ul class="menyfooter">
-                        <li class="menyvalfooter"><a href="#"> frågor och svar </li> <i class="fa-solid fa-arrow-up-right-from-square"></i><!--lägg till ikon ruta med pil-->
-                        <li class="menyvalfooter">Så handlar du</li>
-                        <li class="menyvalfooter">Hemleverans</li>
-                        <li class="menyvalfooter">Färskvarugaranti</li>
+                        <li class="menyvalfooter">
+                            <a class="footerlink" href="#">
+                                    frågor och svar <i class="fa-solid fa-arrow-up-right-from-square">
+                                </i>
+                            </a> 
+                        </li><!--lägg till ikon ruta med pil DONE-->
+                        <li class="menyvalfooter">
+                            <a class="footerlink" href="#">
+                                Så handlar du
+                            </a>
+                        </li>
+                        <li class="menyvalfooter">
+                            <a class="footerlink" href="#">
+                                Hemleverans
+                            </a>
+                        </li>
+                        <li class="menyvalfooter">
+                            <a class="footerlink" href="#">
+                                Färskvarugaranti
+                            </a>
+                        </li>
                     </ul>
 
                 </div>
@@ -146,9 +221,28 @@
                    
                     <h3>Mathem</h3>
                     <ul class="menyfooter">
-                        <li class="menyvalfooter">Om Mathem</li> 
-                        <li class="menyvalfooter">Karriär</li><!--lägg till ikon ruta med pil-->
-                        <li class="menyvalfooter">Press</li><!--lägg till ikon ruta med pil-->
+                        <li class="menyvalfooter">
+                            <a class="footerlink" href="#">
+                                Om Mathem
+                            </a> 
+                        </li>
+                        <li class="menyvalfooter">
+                            <a class="footerlink" href="#">
+                                Så handlar du
+                            </a>
+                        </li>
+                        <li class="menyvalfooter">
+                            <a class="footerlink" href="#">
+                                Karriär <i class="fa-solid fa-arrow-up-right-from-square">
+                                </i>
+                            </a>
+                        </li>
+                        <li class="menyvalfooter">
+                            <a class="footerlink" href="#">
+                                Press <i class="fa-solid fa-arrow-up-right-from-square">
+                                </i>
+                            </a>
+                        </li>
                     </ul>
 
                 </div>
@@ -157,33 +251,54 @@
                    
                     <h3>Kontakta oss</h3>
                     <ul class="menyfooter">
-                        <li class="menyvalfooter">Kundservice</li> 
-                        <li class="menyvalfooter">För leverantörer</li><!--lägg till ikon ruta med pil-->
-                        <li class="menyvalfooter">Facebook</li><!--lägg till ikon ruta med pil-->
-                        <li class="menyvalfooter">X (f.d Twitter)</li><!--lägg till ikon ruta med pil-->
-                        <li class="menyvalfooter">Instagram</li><!--lägg till ikon ruta med pil-->
-                        
-                        
+                        <li class="menyvalfooter">
+                            <a class="footerlink" href="#">
+                                Kundsercive
+                            </a> 
+                        </li>
+                        <li class="menyvalfooter">
+                            <a class="footerlink" href="#">
+                                För leverantörer <i class="fa-solid fa-arrow-up-right-from-square">
+                                </i>
+                            </a>
+                        </li>
+                        <li class="menyvalfooter">
+                            <a class="footerlink" href="#">
+                                Facebook <i class="fa-solid fa-arrow-up-right-from-square">
+                                </i>
+                            </a>
+                        </li>
+                        <li class="menyvalfooter">
+                            <a class="footerlink" href="#">
+                                Instagram <i class="fa-solid fa-arrow-up-right-from-square">
+                                </i>
+                            </a>
+                        </li>
                     </ul>
 
                 </div>
+            </div>
 
-                <div class="sektionfooter">
-
+            <div class="sectionfooter">
+                <div id="section2footer">
+                    
                     <h3>Appar</h3>
+                    <img src="Bilder-mathem/appstore-logo.svg" class="footericon" alt="appstore ikon"/>
 
-                    <img src="Bilder-mathem/appstore-logo.svg" alt="Appstore ikon"/>
-
-                    <img src="Bilder-mathem/googleplay-logo.png" alt="Google play ikon"/>
-
+                    <img src="Bilder-mathem/googleplay-logo.png" class="footericon" alt="google pay ikon"/>
                 </div>
+            </div>
 
+            <div id="footer2">
+
+                
 
             </div>
 
         </footer>
         
-    
+        <!--Bootstrap Javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 
 </html>
