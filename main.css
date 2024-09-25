@@ -1,7 +1,7 @@
-
+/*får inte till typsnittet... testade att formattera om*/
 @font-face {
-    font-family: Buenosaires;
-    src: url(fonter/Buenos-Aires-Light.otf);
+    font-family: "BuenosAires";
+    src: url(fonter/Buenos-Aires-Light.woff) format(woff); 
 }
 
 body {
@@ -9,9 +9,24 @@ body {
     color: #262639;
     font-size: smaller;
     background-color: #fdfdfd;
+    font-family: "BuenosAires";
+
 }
+
+
+/*text styling*/
+
+h3 {
+    padding: 0;
+    margin: 0;
+}
+
+
+
 /* utseende länkar */
-a:link {
+
+a:link, /*slagit ihop pga samma styling, optimering*/
+a:visited {
     color: #262639;
     text-decoration: none;
 }
@@ -20,20 +35,14 @@ a:hover {
     text-decoration: underline;
 }
 
-a:visited {
-    text-decoration: none;
-    color: #262639;
-}
-
-.bootstraplink:link {
+.bootstraplink:link, /*Slagit ihop*/
+.bootstraplink:hover,
+.bootstraplink:visited {
     text-decoration: none;
 }
 
-.bootstraplink:hover {
-    text-decoration: none;
-}
-
-.footerlink:link {
+.footerlink:link, /*Slagit ihop*/
+.footerlink:visited {
     color: white;
     text-decoration: none;
 }
@@ -42,11 +51,6 @@ a:visited {
     text-decoration: underline;
     color: white;
 }
-
-.footerlink:visited {
-    color: white;
-}
-
 /*länkar slut*/
 
 /*justeringar för text*/
@@ -89,6 +93,7 @@ h2 {
 /* font awesome justeringar */
 .fa-gift{
     color: #8e7868;
+    margin-right: 15px;
 }
 
 .fa-cart-shopping {
@@ -99,10 +104,6 @@ h2 {
 .fa-chevron-left {
     display: inline;
     margin: 5px;
-}
-
-.dealicon {
-    margin-right: 15px;
 }
 
 /* här börjar header*/
@@ -160,9 +161,6 @@ header {
     padding-right: 25px;
 }
 
-#navleft {
-    align-items: center;
-}
 /* slut navigering */
 
 

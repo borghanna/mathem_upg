@@ -16,20 +16,18 @@
     </head>
 
     <body>
-
-
             <header>
 
-                 <div id="headerleft"> <!--obs detta var ej okej enligt W3C testade olika alternativ men inget var godkänt. Search var ej tillåtet att ligga i ett annat element. (header, section nav, div)-->
+                 <div id="headerleft">
                     <a href="#">
                         <img id="mathem-logo" alt="Mathem Logotyp" src="Bilder-mathem/mathem-logo-vit.png">
                     </a>
                 
-                    <search id="searchbar">
-                        <form>
-                            <input placeholder="sök"> <!--fråga hur jag får sökikon i rutan-->
+                    
+                        <form id="searchbar"> <!--Tagit bort <search> då den ej fick ligga i ett annat element. Lagt till aria-label-->
+                            <input aria-label="sökruta" type="search" placeholder="sök"> 
                         </form>
-                    </search>
+                    
                 </div>
             
                 <button type="button" class="kundvagn">
@@ -40,35 +38,35 @@
             
                 </button>
             
-            
             </header>
 
             <nav id="navbar">
 
-                <nav id="navleft">
+             <!--Tog bort <nav>, helt och hållet (istället för att byta till t.ex. div) då den var överflödig-->
                     <ul id="huvudmeny">
                         <li class="menyval">
                             <a href="#">
                                 <i class="fa-solid fa-carrot"></i>
                                 Kategorier
                                 <i class="fa-solid fa-angle-down"></i>
-                            </a> <!--TODO: fixa indentering-->
-                         </li> <!--dropdown?-->
+                            </a> 
+                        </li> 
                         <li class="menyval"><a href="#">
-                            <i class="fa-solid fa-certificate"></i>
-                            Erbjudanden
-                        </a></li>
+                                <i class="fa-solid fa-certificate"></i>
+                                Erbjudanden
+                            </a>
+                        </li>
                         <li class="menyval"><a href="#">
-                            <i class="fa-solid fa-utensils"></i>
-                            Recept
-                        </a></li>
+                                <i class="fa-solid fa-utensils"></i>
+                                Recept
+                            </a>
+                        </li>
                         <li class="menyval"><a href="#">
-                            <i class="fa-solid fa-briefcase"></i>
-                            För företag
-                        </a></li>
+                                <i class="fa-solid fa-briefcase"></i>
+                                För företag
+                            </a>
+                        </li>
                     </ul>
-
-                </nav>
 
                 <div id="navright">
 
@@ -77,19 +75,11 @@
                     <button type="button" class="loginknapp">Skapa konto</button>
 
                 </div>
-    
             </nav>
-       
-
-
         <main>
             
             <section id="nykund150">
-
-                <div class="dealicon">
-                    <i class="fa-solid fa-gift fa-2x"></i>
-                </div>
-
+                <i class="fa-solid fa-gift fa-2x"></i>
                 <div class="dealtext">
                     <h4>Ny Här?</h4>
                     <p>Använd koden NY150KR i kassan och få rabatt på din beställning. Gäller vid köp över 800 kr och endast på varor som säljs av Mathem.</p>
@@ -108,7 +98,7 @@
 
                 <img class="flexright" src="Bilder-mathem/bild-1.webp" alt="en man med en matlåda i händerna">
 
-                </section>
+            </section>
 
         
             <section id="mainsection2">
@@ -120,10 +110,10 @@
 
                 <div id="flex-container">
                 
-                    <div class="flexitem">
+                    <div class="flexitem"> <!--Lagt till lazy-loading på bilder för optimering (alla kort)-->
                         <a href="#" class="bootstraplink">
                             <div class="card shadow p-0 mb-5 bg-white rounded border border-none" style="width: 15rem;">
-                                <img src="Bilder-mathem/img-prispressat.webp" class="card-img-top" alt="Bild på olika matvaror">
+                                <img loading="lazy" src="Bilder-mathem/img-prispressat.webp" class="card-img-top" alt="Bild på olika matvaror">
                                 <div class="card-body">
                                     <h5 class="card-title">Prispressat</h5>
                                     <p class="card-text">Handla dina vardagsfavoriter, alltid riktigt låga priser.</p>
@@ -135,7 +125,7 @@
                     <div class="flexitem">
                         <a href="#" class="bootstraplink">
                             <div class="card shadow p-0 mb-5 bg-white rounded border border-none" style="width: 15rem;">
-                                <img src="Bilder-mathem/img-enklare.webp" class="card-img-top"
+                                <img loading="lazy" src="Bilder-mathem/img-enklare.webp" class="card-img-top"
                                     alt="Två personer packar upp matvaror, en av personerna håller en bebis">
                                 <div class="card-body">
                                     <h5 class="card-title">enklare småbarnsliv</h5>
@@ -149,7 +139,7 @@
                     <div class="flexitem">
                         <a href="#" class="bootstraplink">
                             <div class="card shadow p-0 mb-5 bg-white rounded border border-none" style="width: 15rem;">
-                                <img src="Bilder-mathem/img-fruktogront.webp" class="card-img-top" alt="Bild på olika matvaror">
+                                <img loading="lazy" src="Bilder-mathem/img-fruktogront.webp" class="card-img-top" alt="Bild på olika matvaror">
                                 <div class="card-body">
                                     <h5 class="card-title">Frukt och grönt</h5>
                                     <p class="card-text">Njut av det bästa säsongen har att erbjuda, plockat av utbildade experter.</p>
@@ -158,10 +148,10 @@
                         </a>
                     </div>
                 
-                    <div class="flexitem">
+                    <div class="flexitem"> <!--Tog bort Ö i bildnamn pga fel i W3C-->
                         <a href="#" class="bootstraplink">
                             <div class="card shadow p-0 mb-5 bg-white rounded border border-none" style="width: 15rem;">
-                                <img src="Bilder-mathem/img-brödobageri.webp" class="card-img-top" alt="Bild på olika matvaror">
+                                <img loading="lazy" src="Bilder-mathem/img-brodobageri.webp" class="card-img-top" alt="Bild på olika matvaror">
                                 <div class="card-body">
                                     <h5 class="card-title">Bröd och bageri</h5>
                                     <p class="card-text">Nybakat bröd, färdiga bakverk och kex till ostbrickan. Kika inpå hylla för bröd och
@@ -186,7 +176,7 @@
         <footer>
             <div id="footer1"> 
 
-                <div class="sektionfooter"> <!--4 listor/ länkar i varsin div nästlade, fråga om länkar??-->
+                <div class="sektionfooter"> 
                    
                     <h3>Handla</h3>
                     <ul class="menyfooter">
@@ -195,7 +185,7 @@
                                     frågor och svar <i class="fa-solid fa-arrow-up-right-from-square">
                                 </i>
                             </a> 
-                        </li><!--lägg till ikon ruta med pil DONE-->
+                        </li>
                         <li class="menyvalfooter">
                             <a class="footerlink" href="#">
                                 Så handlar du
